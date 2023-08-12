@@ -60,6 +60,7 @@ section {
     position: relative;
     z-index: 2;
     padding: 0 20px; /* Add space on the sides of the content */
+    margin-top: 450px;
 }
 
 #main h1 {
