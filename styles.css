@@ -16,6 +16,7 @@ p, h1, h2, h3, h4, h5, h6, a, div, section {
 
 p {
     font-size: 18px;
+    font-weight: bold;
 }
 
 h2 {
@@ -218,4 +219,23 @@ body::-webkit-scrollbar-thumb:hover {
     /* display: none; */
    /* max-width: 800px; */
    width: 95%;
+}
+
+.quick-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Hide menu on mobile devices */
+@media (max-width: 768px) {
+    .quick-news {
+        padding-left: 10px;
+        padding-right: 10px;
+        }
 }
