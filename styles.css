@@ -48,7 +48,6 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     z-index: 1;
     overflow: hidden; /* Hide the overflow */
 }
@@ -87,12 +86,17 @@ section {
 
 
 #main h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    #main h1 {
+        font-size: 3rem;
+    }
 }
 
 .youtube-button {
@@ -105,7 +109,12 @@ section {
     border-radius: 5px;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Add font-family */
+}
 
+@media (max-width: 768px) {
+    .youtube-button {
+        font-size: 15px;
+    }
 }
 
 /* Menu styles */
@@ -267,4 +276,13 @@ body::-webkit-scrollbar-thumb:hover {
         padding-left: 10px;
         padding-right: 10px;
         }
+}
+
+footer {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
 }
