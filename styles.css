@@ -375,10 +375,6 @@ footer {
     display: inline-block;
     margin-left: 10px; /* Add spacing between icon and text */
   }
-
-  .subscribe {
-    width: 200px;
-  }
   
 
   .not-found {
