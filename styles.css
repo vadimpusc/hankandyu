@@ -219,12 +219,15 @@ nav a:hover {
 /* Social media icons */
 .social-icons {
     margin-top: 20px;
-}
-
-.icon {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
+
+}
+
+.icon {
+    width: 60px;
+    margin-right: 10px;
 }
 
 /* Buttons for Patreon and Shop sections */
@@ -284,6 +287,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 50%;
     margin-bottom: 20px;
     box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 
@@ -366,9 +370,28 @@ footer {
   }
 
   .youtube-icon-menu {
-    font-size: 34px; /* Adjust the size as needed */
+    font-size: 40px; /* Adjust the size as needed */
     vertical-align: middle;
     display: inline-block;
     margin-left: 10px; /* Add spacing between icon and text */
   }
+
+  .subscribe {
+    width: 200px;
+  }
   
+
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .not-found a {
+    text-decoration: underline;
+    color: black;
+    font-size: 24px;
+  }
+
