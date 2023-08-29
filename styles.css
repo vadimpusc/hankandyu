@@ -1,6 +1,6 @@
 /* Reset some default styles */
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body, h1, h2, p, a {
@@ -142,6 +142,8 @@ section {
     border-radius: 5px;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Add font-family */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 @media (max-width: 768px) {
@@ -153,12 +155,12 @@ section {
 /* Menu styles */
 nav {
     /* background-color: rgba(0, 0, 0, 0.8); */
-    background-color: black;
+    background-color: transparent;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:sticky;
+    /* position:sticky; */
     top: 0;
     left: 0;
     width: 100%;
@@ -168,9 +170,10 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -178,7 +181,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: black;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -250,12 +253,14 @@ nav a:hover {
     border-radius: 5px;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Add font-family */
+    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
 
     /* display: none; */
 }
 
 .back-to-top:hover {
     background-color: #FF3333;
+    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); */
 }
 
 /* Show back to top button when scrolling */
@@ -316,14 +321,16 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     font-family: Arial, sans-serif;
     border: 5px solid lightpink;
-    width: 800px;
+    /* width: 900px; */
     margin: 20px auto; /* Center the container horizontally with margin auto */
     padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .quick-news {
-        width: 100vw;
+        /* width: 100vw; */
         height: 100vh;
         border: none;
         margin: 0;
@@ -342,7 +349,14 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
+    color: rgb(48, 48, 48);
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
 }
 
 .youtube-icon {
@@ -350,3 +364,12 @@ footer {
     color: red; /* Adjust the color as needed */
     /* box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.1); */
   }
+
+  .youtube-icon-menu {
+    font-size: 34px; /* Adjust the size as needed */
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px; /* Add spacing between icon and text */
+  }
+  
+  
