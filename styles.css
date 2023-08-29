@@ -1,6 +1,6 @@
 /* Reset some default styles */
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body, h1, h2, p, a {
