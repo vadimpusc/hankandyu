@@ -20,8 +20,19 @@ p {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 54px;
+    text-transform: uppercase;
+    padding-top: 10%;
 }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+        padding-top: 0%;
+    }
+}
+
+
 
 /* Full viewport height for sections */
 section {
@@ -34,6 +45,9 @@ section {
     align-items: center;
     text-align: center;
 }
+
+
+
 
 /* Main section styles */
 #main {
@@ -264,7 +278,9 @@ body::-webkit-scrollbar-thumb:hover {
     width: 300px;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.1);
 }
+
 
 .patreon-image {
     /* display: none; */
@@ -278,8 +294,11 @@ body::-webkit-scrollbar-thumb:hover {
    width: 95%;
 }
 
-.quick-news {
+/* .quick-news {
     display: flex;
+    border: 5px solid lightpink;
+    padding: 20px;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -287,15 +306,35 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: Arial, sans-serif;
     padding-left: 100px;
     padding-right: 100px;
+} */
+
+.quick-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 5px solid lightpink;
+    width: 800px;
+    margin: 20px auto; /* Center the container horizontally with margin auto */
+    padding: 20px;
 }
 
-/* Hide menu on mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .quick-news {
-        padding-left: 10px;
-        padding-right: 10px;
-        }
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        margin: 0;
+        padding: 30px;
+        overflow: auto;
+        box-sizing: border-box;
+    }
 }
+
+
+
 
 footer {
     /* display: none; */
@@ -303,5 +342,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
+
+.youtube-icon {
+    font-size: 70px; /* Adjust the size as needed */
+    color: red; /* Adjust the color as needed */
+    /* box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.1); */
+  }
