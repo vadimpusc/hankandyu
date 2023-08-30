@@ -47,6 +47,20 @@ section {
 }
 
 
+section.about {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
 
 
 /* Main section styles */
