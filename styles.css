@@ -239,6 +239,16 @@ nav a:hover {
     .quick-news {
     margin: 20px 20px;
     }
+    .news-heading {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+}
+
+.news-heading {
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
 }
 
 
@@ -295,7 +305,8 @@ footer {
 
   @media screen and (max-width: 768px) {
     .logo {
-        font-size: 50px;
+        font-size: 40px;
+        text-align: center;
     }
   }
 
