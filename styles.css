@@ -3,6 +3,8 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: Arial;
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari-specific */
 }
 html {
     /* overflow-x: hidden; */
